@@ -17,7 +17,26 @@ public class Carta{
 		this.valor = valor;
 		this.palo = palo;
 	}
+	
+	public int getValor() {
+		return valor;
+	}
+	
+    public String getPaloString() {
+    switch ( palo ) {
+       case ESCUDOS:   return "ESCUDOS";
+       case FLORES:   return "FLORES";
+       case ESTRELLAS: return "ESTRELLAS";
+       case GOTAS:    return "GOTAS";
+       default:       return "??";
+    }
+}
+	
+	
 
+	public int getPalo() {
+		return palo;
+	}
 
 	@Override
 	public boolean equals(Object obj) {

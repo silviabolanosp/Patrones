@@ -14,8 +14,16 @@ public class Naipe {
 		for ( int palo = 0; palo < 4; palo++ ) { // hay 4 tipos de palos
 	    	   
 			for ( int valor = 1; valor <= 13; valor++ ) { 
-				if(valor >= 10) {
-					naipe[contCartasCreadas] = new Carta(10,palo);
+				if(valor == 1)
+					naipe[contCartasCreadas] = new Carta(Carta.AS,palo);
+				else
+				if(valor > 10) {
+					if(valor == 11)
+					naipe[contCartasCreadas] = new Carta(Carta.JOTA,palo);
+					if(valor == 12)
+						naipe[contCartasCreadas] = new Carta(Carta.QUINA,palo);
+					if(valor == 11)
+						naipe[contCartasCreadas] = new Carta(Carta.KA,palo);
 				}else {
 					naipe[contCartasCreadas] = new Carta(valor,palo);
 				}
