@@ -5,19 +5,12 @@ import java.util.ArrayList;
 public class Jugador {
 	private ArrayList <Carta> mano = new ArrayList<>(); 
 	private String nombre;
-
-	public Jugador() {}
 	
 	public Jugador(String nombre) {
 		super();
 		this.nombre = nombre;
 	}
 
-	public Jugador(ArrayList<Carta> mano, String nombre) {
-		super();
-		this.mano = mano;
-		this.nombre = nombre;
-	}
 
 	public ArrayList<Carta> getMano() {
 		return mano;
@@ -34,6 +27,8 @@ public class Jugador {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
+	
 	
 	
 
