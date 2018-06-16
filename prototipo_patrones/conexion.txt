@@ -1,2 +1,0 @@
-jdbc:mysql://localhost/patrones_prototipo?user=root&password=
-com.mysql.cj.jdbc.Drive
