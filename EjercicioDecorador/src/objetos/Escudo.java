@@ -1,7 +1,5 @@
 package objetos;
 
-import decorador.Elemento;
-
 public class Escudo extends Elemento {
 
 	Elemento personaje;

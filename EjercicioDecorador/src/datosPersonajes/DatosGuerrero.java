@@ -1,6 +1,6 @@
 package datosPersonajes;
 
-import decorador.Guerrero;
+import Personajes.Guerrero;
 import objetos.Amuleto;
 import objetos.Armadura;
 import objetos.Escudo;
@@ -17,32 +17,12 @@ public class DatosGuerrero {
 		Escudo escudoGuerrero = new Escudo(guerrero);
 		Amuleto amuletoGuerrero = new Amuleto(guerrero);
 
-		System.out.println("Guerrero:");
-		System.out.println();
-
-		System.out.println("Tenemos un " + guerrero.getNombre() + " que tiene de vida: " + guerrero.vida()
-				+ ", de ataque: " + guerrero.ataque() + ", de defensa: " + guerrero.defensa()
-				+ ", de magia: " + guerrero.magia());
-
-		System.out.println("Tenemos un " + espadaGuerrero.getNombre() + " que tiene de vida: " + espadaGuerrero.vida()
-				+ ", de ataque: " + espadaGuerrero.ataque() + ", de defensa: " + espadaGuerrero.defensa()
-				+ ", de magia: " + espadaGuerrero.magia());
-
-		System.out.println("Tenemos un " + armaduraGuerrero.getNombre() + " que tiene de vida: "
-				+ armaduraGuerrero.vida() + ", de ataque: " + armaduraGuerrero.ataque() + ", de defensa: "
-				+ armaduraGuerrero.defensa() + ", de magia: " + armaduraGuerrero.magia());
-
-		System.out.println("Tenemos un " + escudoGuerrero.getNombre() + " que tiene de vida: " + escudoGuerrero.vida()
-				+ ", de ataque: " + escudoGuerrero.ataque() + ", de defensa: " + escudoGuerrero.defensa()
-				+ ", de magia: " + escudoGuerrero.magia());
-
-		System.out.println("Tenemos un " + amuletoGuerrero.getNombre() + " que tiene de vida: " + amuletoGuerrero.vida()
-				+ ", de ataque: " + amuletoGuerrero.ataque() + ", de defensa: " + amuletoGuerrero.defensa()
-				+ ", de magia: " + amuletoGuerrero.magia());
-
-		System.out.println();
-		System.out.println(
-				"------------------------------------------------------------------------------------------------------------------");
+		System.out.println("\nGuerreros:\n");
+		System.out.println(guerrero.getNombre() + ": Vida: " + guerrero.vida() + ". Ataque: " + guerrero.ataque() + ". Defensa: " + guerrero.defensa() + ". Magia: " + guerrero.magia());
+		System.out.println(espadaGuerrero.getNombre() + ": Vida: " + espadaGuerrero.vida() + ". Ataque: " + espadaGuerrero.ataque() + ". Defensa: " + espadaGuerrero.defensa() + ". Magia: " + espadaGuerrero.magia());
+		System.out.println(armaduraGuerrero.getNombre() + ": Vida: " + armaduraGuerrero.vida() + ". Ataque: " + armaduraGuerrero.ataque() + ". Defensa: " + armaduraGuerrero.defensa() + ". Magia: " + armaduraGuerrero.magia());
+		System.out.println(escudoGuerrero.getNombre() + ": Vida: " + escudoGuerrero.vida() + ". Ataque: " + escudoGuerrero.ataque() + ". Defensa: " + escudoGuerrero.defensa() + ". Magia: " + escudoGuerrero.magia());
+		System.out.println(amuletoGuerrero.getNombre() + ": Vida: " + amuletoGuerrero.vida() + ". Ataque: " + amuletoGuerrero.ataque() + ". Defensa: " + amuletoGuerrero.defensa() + ". Magia: " + amuletoGuerrero.magia());
 
 	}
 

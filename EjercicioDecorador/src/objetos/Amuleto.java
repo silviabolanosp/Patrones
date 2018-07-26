@@ -1,8 +1,5 @@
 package objetos;
 
-import decorador.DecoradorPersonaje;
-import decorador.Elemento;
-
 public class Amuleto extends Elemento {
 
 	Elemento personaje;

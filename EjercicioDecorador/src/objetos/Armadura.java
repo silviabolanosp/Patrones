@@ -1,7 +1,5 @@
 package objetos;
 
-import decorador.Elemento;
-
 public class Armadura extends Elemento {
 
 	Elemento personaje;

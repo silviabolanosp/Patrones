@@ -1,6 +1,6 @@
 package datosPersonajes;
 
-import decorador.Trabajador;
+import Personajes.Trabajador;
 import objetos.Armadura;
 import objetos.Escudo;
 import objetos.Espada;
@@ -15,24 +15,11 @@ public class DatosTrabajador {
 		Armadura armaduraTrabajador = new Armadura(trabajador);
 		Escudo escudoTrabajador = new Escudo(trabajador);
 
-		System.out.println("Trabajador:");
-		System.out.println();
-
-		System.out.println("Tenemos un " + trabajador.getNombre() + " que tiene de vida: " + trabajador.vida()
-				+ ", de ataque: " + trabajador.ataque() + ", de defensa: " + trabajador.defensa() + ", de magia: "
-				+ trabajador.magia());
-
-		System.out.println("Tenemos un " + espadaTrabajador.getNombre() + " que tiene de vida: "
-				+ espadaTrabajador.vida() + ", de ataque: " + espadaTrabajador.ataque() + ", de defensa: "
-				+ espadaTrabajador.defensa() + ", de magia: " + espadaTrabajador.magia());
-
-		System.out.println("Tenemos un " + armaduraTrabajador.getNombre() + " que tiene de vida: "
-				+ armaduraTrabajador.vida() + ", de ataque: " + armaduraTrabajador.ataque() + ", de defensa: "
-				+ armaduraTrabajador.defensa() + ", de magia: " + armaduraTrabajador.magia());
-
-		System.out.println("Tenemos un " + escudoTrabajador.getNombre() + " que tiene de vida: "
-				+ escudoTrabajador.vida() + ", de ataque: " + escudoTrabajador.ataque() + ", de defensa: "
-				+ escudoTrabajador.defensa() + ", de magia: " + escudoTrabajador.magia());
+		System.out.println("\nTrabajadores:\n");
+		System.out.println(trabajador.getNombre() + ": Vida: " + trabajador.vida() + ". Ataque: " + trabajador.ataque() + ". Defensa: " + trabajador.defensa() + ". Magia: " + trabajador.magia());
+		System.out.println(espadaTrabajador.getNombre() + ": Vida: " + espadaTrabajador.vida() + ". Ataque: " + espadaTrabajador.ataque() + ". Defensa: " + espadaTrabajador.defensa() + ". Magia: " + espadaTrabajador.magia());
+		System.out.println(armaduraTrabajador.getNombre() + ": Vida: " + armaduraTrabajador.vida() + ". Ataque: " + armaduraTrabajador.ataque() + ". Defensa: " + armaduraTrabajador.defensa() + ". Magia: " + armaduraTrabajador.magia());
+		System.out.println(escudoTrabajador.getNombre() + ": Vida: " + escudoTrabajador.vida() + ". Ataque: " + escudoTrabajador.ataque() + ". Defensa: " + escudoTrabajador.defensa() + ". Magia: " + escudoTrabajador.magia());
 
 	}
 
